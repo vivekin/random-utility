@@ -1,0 +1,195 @@
+<div class="row">
+	<div class="col-lg-12">
+		<div class="formDetailsMain">
+			<div class="formDetailsMainHead OutstandingBillDetails">
+				<h1>Outstanding Bill Details</h1>
+			</div>
+		</div>
+		
+
+			<div class="row errorMessageSitewide" id="ffkMsgDiv" style="display:none;">
+				<a id="errorclose4" href="javascript:void(0);"></a>
+				<div class="col-lg-12">
+					<div class="errorMessageSitewideBG"></div>
+					<div id="ffkMsg" class="errorMessageSitewideMessageSuccess">&nbsp;</div>
+				</div>
+			</div>
+		
+			<input type="hidden" name="custConnectionId" id="custConnectionId" value="0">
+		
+		<div class="col-lg-12">
+			<div class="col-lg-6">
+				<div class="signleftbox">
+					<h3>
+						Consumer Name:
+					</h3>
+				</div>
+				<div class="signrightbox">
+					<input type="text" id="focusedInput" name="consumerName" value="TOM*****R" disabled=""> <input type="hidden" id="consumerNumber" name="consumerNumber" value="9999999999999"> <input id="billNo" type="hidden" name="billNo" value="5552260713981">
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="signleftbox">
+					<h3>
+						Section Name:
+					</h3>
+				</div>
+				<div class="signrightbox">
+					<input type="text" id="focusedInput" value="Paris" disabled="">
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-12">
+		<div class="col-lg-6">
+				<div class="signleftbox">
+					<h3>
+						Tariff Code:
+					</h3>
+				</div>
+				<div class="signrightbox">
+					<input type="text" id="focusedInput" value="LT-1" disabled="">
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="signleftbox">
+					<h3>
+						Bill Amount:
+					</h3>
+				</div>
+				<div class="signrightbox">
+					<div class="form-group">
+					    <input type="text" id="focusedInput" value="2,786.00" disabled="">
+							
+							  	<span class="label label-info" id="#spiltup" data-toggle="modal" data-target="#billsModal">View Spilt up</span>
+							 
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+		
+			<div class="col-lg-12">
+				<div class="col-lg-6">
+					<div class="signleftbox">
+						<h3>
+							Due Date:
+						</h3>
+					</div>
+					<div class="signrightbox">
+						<input type="text" value="31/07/2026  " disabled="" id="">									
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="signleftbox">
+						<h3>
+							Disconnection Date:
+						</h3>
+					</div>
+					<div class="signrightbox">
+						<input type="text" id="focusedInput" value="17/08/2026  " disabled="">		
+							
+					</div>
+				</div>
+			</div>	
+		
+		<div class="col-lg-12">
+		<div class="col-lg-6">
+				<div class="signleftbox">
+					<h3>
+						Due Amount:
+					</h3>
+				</div>
+				<div class="signrightbox">
+					<input type="text" id="focusedInput" value="2,609.00" disabled="">
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="signleftbox">
+					<h3>
+						Payment Amount(Rs.):
+					</h3>
+				</div>
+				<div class="signrightbox">
+					<input type="text" id="paymentamount" name="paymentamount" onkeypress="return charsAllow(event)" data-regexp="^\d{0,10}(\.\d{1,2})?$" data-maxlength="13" maxlength="13" data-trigger="focusin focusout" data-error-message="Please enter only numbers upto 2 decimal places" value="2609.00" autofocus="" autocomplete="off" class="parsley-validated"> <input type="hidden" id="payable" value="2609.00">
+				</div>
+				<p class="adv_paymentstar" id="adv_paymentstar">*&nbsp;Excess payment will be
+					treated as Advance payment</p>
+			</div>
+		</div>
+		
+		
+			<div class="col-lg-12">
+		
+				<div class="col-lg-6">
+					<div class="signleftbox">
+						<h3>
+							Email Id:
+						</h3>
+					</div>
+					<div class="signrightbox">
+						<input type="text" id="email" name="email" placeholder="Provide Email" data-trigger="focusin focusout" maxlength="50" data-type="email" data-required="false" data-regexp="^[a-zA-Z0-9.!#$%&amp;*+/=?^_{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" data-error-message="You must enter a valid email address" value="" autocomplete="off" class="parsley-validated">
+					</div>
+				</div>
+			
+				<div class="col-lg-6">
+					<div class="signleftbox">
+						<h3>
+							Mobile Number:
+						</h3>
+					</div>
+					<div class="signrightbox">
+						<input type="tel" id="mobileNo" name="mobileNumber" placeholder="Provide Mobile number" value="1111111111" data-trigger="focusin focusout" data-regexp="^[6-9][0-9]{9}$" data-minlength="10" maxlength="10" data-required="false" data-error-message="You must enter a valid mobile number" autocomplete="off" class="parsley-validated">
+					</div>
+				</div>
+			</div>
+		
+	</div>
+</div>
+<div class="row errorMessageSitewide" id="msg1" style="display: none;">
+	<a id="errorclose1" href="javascript:void(0);"></a>
+	<div class="col-lg-12">
+		<div class="errorMessageSitewideBG"></div>
+		<div class="errorMessageSitewideMessage">
+			&nbsp;
+			Either Email Id or Mobile Number is mandatory
+		</div>
+	</div>
+</div>
+<div class="row errorMessageSitewide" id="msgAmt" style="display: none;">
+	<a id="errorclose1" href="javascript:void(0);"></a>
+	<div class="col-lg-12">
+		<div class="errorMessageSitewideBG"></div>
+		<div class="errorMessageSitewideMessage">
+			&nbsp;
+			Amount Should Be Greater Than 5
+		</div>
+	</div>
+</div>
+<div class="row errorMessageSitewide" id="msgCond" style="display: block;">
+	<a id="errorclose1" href="javascript:void(0);"></a>
+	<div class="col-lg-12">
+		<div class="errorMessageSitewideBG"></div>
+		<div class="errorMessageSitewideMessage" style="color:#E87243;">
+			&nbsp;
+			Quick payment option for ENERGY CHARGE bills, annual ACD bills and LED bills. Installment bills can be paid only through counter. Due amount will be updated only tomorrow in case of bills paid today. Rebate is not applicable to advance amount paid.
+		</div>
+	</div>
+</div>
+
+
+	<div class="row registerFormBtnMain">
+		<div class="line_regbuttonboxlb fl">
+			<div class="col-lg-12 engbtn_mid_all ">
+				
+
+				      	 <button type="button" onclick="checkfield('1','0','25-07-2026 11:53:05.578')" id="pay-bill-due" class="btn btn-lg btn-primary registerBtn Q_btr">Proceed
+								to payment</button>
+						
+
+				<!-- <a href="quickpay"> -->
+				<button type="button" class="btn btn-lg btn-primary cancelBtn Q_bt" onclick="test()">Reset</button>
+				<!-- </a> -->
+			</div>
+		</div>
+	</div>
