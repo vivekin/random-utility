@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 50. head -->
+    <meta charset="UTF-8">
+    <!-- 77. meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 119. title -->
+    <title>HTML Tag Demonstration Page</title>
+
+    <!-- 71. link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- 106. style -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        header, footer {
+            padding: 20px;
+            background: #eee;
+        }
+
+        section, article, aside {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 8px;
+        }
+
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+
+    <!-- 11. base -->
+    <!-- Changes the base URL for relative links -->
+    <!--
+    <base href="https://example.com/">
+    -->
+
+    <!-- 29. comment -->
+    <!-- This is an HTML comment. It is not displayed in the browser. -->
+
+    <!-- 4. address-related metadata example -->
+</head>
+
+<body>
+
+    <!-- 18. body -->
+
+    <!-- 48. header -->
+    <header>
+        <!-- 52. headings -->
+        <h1>HTML Tag Demonstration</h1>
+        <h2>Learning HTML</h2>
+        <h3>HTML Elements</h3>
+        <h4>Text Elements</h4>
+        <h5>Examples</h5>
+        <h6>Smallest Heading</h6>
+
+        <!-- 53. hgroup -->
+        <hgroup>
+            <h2>HTML Tags</h2>
+            <h3>A demonstration of common and obsolete elements</h3>
+        </hgroup>
+
+        <!-- 79. nav -->
+        <nav>
+            <a href="#text">Text</a> |
+            <a href="#media">Media</a> |
+            <a href="#forms">Forms</a> |
+            <a href="#tables">Tables</a>
+        </nav>
+    </header>
+
+
+    <!-- 73. main -->
+    <main>
+
+        <!-- 99. section -->
+        <section id="text">
+
+            <h2>Text Formatting</h2>
+
+            <!-- 87. paragraph -->
+            <p>
+                This is a paragraph containing various HTML elements.
+            </p>
+
+            <!-- 2. abbr -->
+            <p>
+                <abbr title="HyperText Markup Language">HTML</abbr>
+                is used to structure web pages.
+            </p>
+
+            <!-- 3. acronym (obsolete) -->
+            <p>
+                <acronym title="World Wide Web">WWW</acronym>
+                is an old-style acronym element.
+            </p>
+
+            <!-- 19. bold -->
+            <p><b>This text is bold.</b></p>
+
+            <!-- 61. italic -->
+            <p><i>This text is italic.</i></p>
+
+            <!-- 105. strong -->
+            <p><strong>This text is important.</strong></p>
+
+            <!-- 89. em -->
+            <p><em>This text is emphasized.</em></p>
+
+            <!-- 100. small -->
+            <p><small>This is smaller text.</small></p>
+
+            <!-- 123. underline -->
+            <p><u>This text is underlined.</u></p>
+
+            <!-- 104. strike (obsolete) -->
+            <p><strike>This text uses obsolete strike-through.</strike></p>
+
+            <!-- 96. s -->
+            <p><s>This information is no longer correct.</s></p>
+
+            <!-- 59. ins -->
+            <p><ins>This text was inserted.</ins></p>
+
+            <!-- 34. del -->
+            <p><del>This text was deleted.</del></p>
+
+            <!-- 22. big (obsolete) -->
+            <p><big>This text is bigger.</big></p>
+
+            <!-- 45. font (obsolete) -->
+            <p><font color="red" size="5">Old font tag example.</font></p>
+
+            <!-- 107. sub -->
+            <p>Water formula: H<sub>2</sub>O</p>
+
+            <!-- 108. sup -->
+            <p>Einstein: E = mc<sup>2</sup></p>
+
+            <!-- 74. mark -->
+            <p>This is <mark>highlighted text</mark>.</p>
+
+            <!-- 103. span -->
+            <p>
+                This is a <span>generic inline container</span>.
+            </p>
+
+            <!-- 123. underline -->
+            <p><u>Underlined text.</u></p>
+
+            <!-- 124. var -->
+            <p>
+                The variable <var>x</var> represents a number.
+            </p>
+
+            <!-- 26. code -->
+            <p>
+                Use <code>print("Hello World")</code> in Python.
+            </p>
+
+            <!-- 67. kbd -->
+            <p>
+                Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.
+            </p>
+
+            <!-- 97. samp -->
+            <p>
+                Program output:
+                <samp>Hello World</samp>
+            </p>
+
+            <!-- 91. output -->
+            <p>
+                Calculation result:
+                <output>42</output>
+            </p>
+
+            <!-- 90. pre -->
+            <pre>
+This text
+preserves
+spaces and
+line breaks.
+            </pre>
+
+            <!-- 126. wbr -->
+            <p>
+                VeryLongWord<wbr>ThatMayBreakHere
+            </p>
+
+            <!-- 80. nobr (obsolete) -->
+            <p>
+                <nobr>This text should not break into multiple lines.</nobr>
+            </p>
+
+            <!-- 102. spacer (obsolete) -->
+            <p>
+                Text before
+                <spacer type="horizontal" size="20">
+                text after
+            </p>
+
+            <!-- 75. marquee (obsolete) -->
+            <marquee>
+                This text scrolls across the screen.
+            </marquee>
+
+            <!-- 76. menuitem (obsolete) -->
+            <!--
+            <menu>
+                <menuitem label="Save" onclick="saveFile()">
+            </menu>
+            -->
+
+            <!-- 37. dir (obsolete) -->
+            <dir>
+                <li>Old directory item</li>
+                <li>Another directory item</li>
+            </dir>
+
+        </section>
+
+
+        <!-- 17. blockquote -->
+        <section>
+            <h2>Quotes</h2>
+
+            <blockquote cite="https://example.com">
+                This is a long quotation from another source.
+            </blockquote>
+
+            <!-- 92. q -->
+            <p>
+                He said, <q>Hello World!</q>
+            </p>
+
+            <!-- 25. cite -->
+            <p>
+                <cite>The Great Gatsby</cite> is a famous novel.
+            </p>
+        </section>
+
+
+        <!-- 31. datalist -->
+        <section>
+            <h2>Definition and Data Elements</h2>
+
+            <!-- 33. dfn -->
+            <p>
+                <dfn>HTML</dfn> stands for HyperText Markup Language.
+            </p>
+
+            <!-- 30. data -->
+            <p>
+                Product:
+                <data value="12345">Laptop</data>
+            </p>
+
+            <!-- 118. time -->
+            <p>
+                Event date:
+                <time datetime="2026-08-03">August 3, 2026</time>
+            </p>
+
+            <!-- 13. bdi -->
+            <p>
+                User:
+                <bdi>علي</bdi>
+            </p>
+
+            <!-- 14. bdo -->
+            <p>
+                Normal:
+                <bdo dir="rtl">This text is displayed right-to-left.</bdo>
+            </p>
+
+            <!-- 93-95. ruby, rt, rp -->
+            <p>
+                Japanese:
+                <ruby>
+                    日本
+                    <rp>(</rp>
+                    <rt>にほん</rt>
+                    <rp>)</rp>
+                </ruby>
+            </p>
+        </section>
+
+
+        <!-- 38. div -->
+        <div>
+            This content is grouped inside a div element.
+        </div>
+
+
+        <!-- 9. aside -->
+        <aside>
+            <h2>Related Information</h2>
+            <p>This is supplementary content placed inside an aside.</p>
+        </aside>
+
+
+        <!-- 35. details -->
+        <section>
+            <details>
+                <!-- 109. summary -->
+                <summary>Click to show more information</summary>
+
+                <p>
+                    This content is hidden until the details element is opened.
+                </p>
+            </details>
+        </section>
+
+
+        <!-- 36. dialog -->
+        <section>
+            <dialog open>
+                This is a dialog box.
+            </dialog>
+        </section>
+
+
+        <!-- 54. hr -->
+        <hr>
+
+
+        <!-- 8. article -->
+        <article>
+
+            <h2>Sample Article</h2>
+
+            <p>
+                This is a self-contained article.
+            </p>
+
+            <!-- 43-44. figure and figcaption -->
+            <figure>
+
+                <!-- 56. iframe -->
+                <iframe
+                    src="https://example.com"
+                    width="400"
+                    height="200">
+                </iframe>
+
+                <figcaption>
+                    Example of an embedded webpage.
+                </figcaption>
+
+            </figure>
+
+        </article>
+
+
+        <!-- 42. fieldset -->
+        <!-- 68. keygen is obsolete -->
+        <section id="forms">
+
+            <h2>Form Elements</h2>
+
+            <!-- 47. form -->
+            <form>
+
+                <!-- 70. legend -->
+                <fieldset>
+
+                    <legend>User Information</legend>
+
+                    <!-- 69. label -->
+                    <label for="name">Name:</label>
+
+                    <!-- 58. input -->
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name">
+
+                    <br>
+
+                    <label for="browser">Browser:</label>
+
+                    <!-- 31. datalist -->
+                    <input
+                        list="browsers"
+                        id="browser"
+                        name="browser">
+
+                    <datalist id="browsers">
+                        <!-- 85. option -->
+                        <option value="Chrome">
+                        <option value="Firefox">
+                        <option value="Edge">
+                    </datalist>
+
+                    <br>
+
+                    <!-- 84. optgroup -->
+                    <label for="country">Country:</label>
+
+                    <select id="country">
+
+                        <optgroup label="Asia">
+                            <option value="india">India</option>
+                            <option value="japan">Japan</option>
+                        </optgroup>
+
+                        <optgroup label="Europe">
+                            <option value="germany">Germany</option>
+                            <option value="france">France</option>
+                        </optgroup>
+
+                    </select>
+
+                    <br>
+
+                    <!-- 78. meter -->
+                    <label>Storage:</label>
+                    <meter
+                        value="70"
+                        min="0"
+                        max="100">
+                        70%
+                    </meter>
+
+                    <br>
+
+                    <!-- 91. progress -->
+                    <label>Progress:</label>
+                    <progress
+                        value="60"
+                        max="100">
+                        60%
+                    </progress>
+
+                    <br>
+
+                    <!-- 21. button -->
+                    <button type="button">
+                        Click Me
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+            <!-- 68. keygen (obsolete) -->
+            <!--
+            <keygen name="security">
+            -->
+
+            <!-- 60. isindex (obsolete) -->
+            <!--
+            <isindex prompt="Search">
+            -->
+
+        </section>
+
+
+        <!-- 111. table -->
+        <section id="tables">
+
+            <h2>Table Example</h2>
+
+            <table>
+
+                <!-- 22. caption -->
+                <caption>Employee Information</caption>
+
+                <!-- 27. colgroup -->
+                <colgroup>
+
+                    <!-- 28. col -->
+                    <col span="1" style="background-color: #eee;">
+                    <col span="2">
+
+                </colgroup>
+
+                <!-- 115. thead -->
+                <thead>
+
+                    <!-- 120. tr -->
+                    <tr>
+
+                        <!-- 116. th -->
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Department</th>
+
+                    </tr>
+
+                </thead>
+
+                <!-- 112. tbody -->
+                <tbody>
+
+                    <tr>
+
+                        <!-- 113. td -->
+                        <td>Vivek</td>
+                        <td>32</td>
+                        <td>Engineering</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Alice</td>
+                        <td>30</td>
+                        <td>Design</td>
+
+                    </tr>
+
+                </tbody>
+
+                <!-- 114. tfoot -->
+                <tfoot>
+
+                    <tr>
+
+                        <td colspan="3">
+                            Total Employees: 2
+                        </td>
+
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+        </section>
+
+
+        <!-- 23. canvas -->
+        <section>
+            <h2>Canvas</h2>
+
+            <canvas
+                id="myCanvas"
+                width="400"
+                height="150">
+                Your browser does not support canvas.
+            </canvas>
+        </section>
+
+
+        <!-- 110. svg -->
+        <section>
+            <h2>SVG</h2>
+
+            <svg
+                width="300"
+                height="150">
+
+                <circle
+                    cx="75"
+                    cy="75"
+                    r="50"
+                    fill="blue">
+                </circle>
+
+            </svg>
+
+        </section>
+
+
+        <!-- 20. br -->
+        <section>
+            <p>
+                First line.<br>
+                Second line.
+            </p>
+        </section>
+
+
+        <!-- 7. area + image map -->
+        <section>
+            <h2>Image Map</h2>
+
+            <!-- 57. img -->
+            <img
+                src="image.jpg"
+                alt="Example image"
+                width="400"
+                usemap="#examplemap">
+
+            <map name="examplemap">
+
+                <!-- 7. area -->
+                <area
+                    shape="rect"
+                    coords="0,0,200,150"
+                    href="https://example.com"
+                    alt="Example">
+
+            </map>
+
+        </section>
+
+
+        <!-- 10. audio -->
+        <section id="media">
+
+            <h2>Audio</h2>
+
+            <audio controls>
+
+                <!-- 101. source -->
+                <source
+                    src="audio.mp3"
+                    type="audio/mpeg">
+
+                Your browser does not support audio.
+
+            </audio>
+
+        </section>
+
+
+        <!-- 125. video -->
+        <section>
+
+            <h2>Video</h2>
+
+            <video
+                width="400"
+                controls>
+
+                <!-- 101. source -->
+                <source
+                    src="video.mp4"
+                    type="video/mp4">
+
+                <!-- 121. track -->
+                <track
+                    kind="subtitles"
+                    src="subtitles.vtt"
+                    srclang="en"
+                    label="English">
+
+                Your browser does not support video.
+
+            </video>
+
+        </section>
+
+
+        <!-- 83. object -->
+        <section>
+
+            <h2>Object</h2>
+
+            <object
+                data="document.pdf"
+                type="application/pdf"
+                width="400"
+                height="300">
+
+                PDF cannot be displayed.
+
+            </object>
+
+            <!-- 88. param (obsolete) -->
+            <!--
+            <param name="autoplay" value="true">
+            -->
+
+        </section>
+
+
+        <!-- 41. embed -->
+        <section>
+
+            <h2>Embed</h2>
+
+            <embed
+                src="document.pdf"
+                type="application/pdf"
+                width="400"
+                height="300">
+
+            <!-- 81. noembed (obsolete) -->
+            <noembed>
+                Your browser does not support embedded content.
+            </noembed>
+
+        </section>
+
+
+        <!-- 32. dd, 39. dl, 40. dt -->
+        <section>
+
+            <h2>Description List</h2>
+
+            <dl>
+
+                <dt>HTML</dt>
+
+                <dd>
+                    HyperText Markup Language.
+                </dd>
+
+                <dt>CSS</dt>
+
+                <dd>
+                    Cascading Style Sheets.
+                </dd>
+
+            </dl>
+
+        </section>
+
+
+        <!-- 122. tt (obsolete) -->
+        <p>
+            <tt>This is old teletype text.</tt>
+        </p>
+
+
+        <!-- 64. template -->
+        <section>
+
+            <h2>Template</h2>
+
+            <template id="userTemplate">
+
+                <div class="user">
+                    <p>User template content</p>
+                </div>
+
+            </template>
+
+        </section>
+
+
+        <!-- 98. script -->
+        <script>
+
+            // Canvas example
+            const canvas =
+                document.getElementById("myCanvas");
+
+            const ctx =
+                canvas.getContext("2d");
+
+            ctx.fillRect(50, 50, 100, 50);
+
+        </script>
+
+
+        <!-- 82. noscript -->
+        <noscript>
+
+            JavaScript is disabled in your browser.
+
+        </noscript>
+
+
+        <!-- 72. list -->
+        <ul>
+
+            <!-- 72. li -->
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+
+        </ul>
+
+
+        <!-- 44. figure -->
+        <figure>
+
+            <img
+                src="photo.jpg"
+                alt="Example photo"
+                width="300">
+
+            <figcaption>
+                An example photograph.
+            </figcaption>
+
+        </figure>
+
+
+        <!-- 46. footer -->
+        <footer>
+
+            <!-- 4. address -->
+            <address>
+
+                Contact:
+                <a href="mailto:hello@example.com">
+                    hello@example.com
+                </a>
+
+                <br>
+
+                Example Web Organization
+
+            </address>
+
+            <p>
+                &copy; 2026 Example Organization
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- 5. anchor -->
+    <p>
+        <a href="https://example.com">
+            Visit Example.com
+        </a>
+    </p>
+
+
+    <!-- 1. DOCTYPE is at the very top of this document -->
+
+
+    <!--
+    ============================================================
+    OBSOLETE / DEPRECATED HTML ELEMENTS
+    ============================================================
+
+    6. applet
+    <applet code="Example.class" width="300" height="200">
+    </applet>
+
+    15. bgsound
+    <bgsound src="music.wav" loop="infinite">
+
+    24. center
+    <center>This content is centered.</center>
+
+    49. frame
+    <frame src="page.html">
+
+    50. frameset
+    <frameset cols="50%,50%">
+        <frame src="left.html">
+        <frame src="right.html">
+    </frameset>
+
+    45. font
+    <font face="Arial" size="5" color="red">
+        Old font formatting
+    </font>
+
+    60. isindex
+    <isindex prompt="Search">
+
+    68. keygen
+    <keygen name="security">
+
+    76. menuitem
+    <menuitem label="Save">
+
+    81. noembed
+    <noembed>
+        Alternative content
+    </noembed>
+
+    88. param
+    <param name="autoplay" value="true">
+
+    102. spacer
+    <spacer type="horizontal" size="20">
+
+    104. strike
+    <strike>Deleted-looking text</strike>
+
+    122. tt
+    <tt>Teletype text</tt>
+
+    127. xmp
+    <xmp>
+        <div>
+            This was displayed literally.
+        </div>
+    </xmp>
+
+    75. marquee
+    <marquee>Scrolling text</marquee>
+
+    37. dir
+    <dir>
+        <li>Item</li>
+    </dir>
+
+    80. nobr
+    <nobr>This text does not wrap.</nobr>
+
+    ============================================================
+    -->
+
+</body>
+</html>
