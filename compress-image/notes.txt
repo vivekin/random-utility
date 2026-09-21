@@ -1,0 +1,52 @@
+gm identify -verbose testedit\a_1.jpg
+
+
+http://www.graphicsmagick.org/convert.html
+http://www.graphicsmagick.org/mogrify.html
+
+
+gm convert a_1.jpg -strip -quality 95 a_95.jpg
+gm convert a_1.jpg -strip -quality 90 a_90.jpg
+gm convert a_1.jpg -strip -quality 85 a_85.jpg
+gm convert a_1.jpg -strip -quality 80 a_80.jpg
+
+
+gm convert a_1.jpg -quality 90 a_1_compressed.jpg
+gm convert a_1.jpg -quality 85 a_1_compressed.jpg
+
+
+
+gm convert testedit\a_1.jpg -strip -quality 90 testedit\a_1_90.jpg
+gm convert testedit\a_1.jpg -quality 90 testedit\a_1_90_cmpr.jpg
+
+
+gm convert testedit\a_1.jpg -quality 80 testedit\a_1_80_cmpr.jpg
+gm convert testedit\a_1.jpg -quality 70 testedit\a_1_70_cmpr.jpg
+gm convert testedit\a_1.jpg -quality 60 testedit\a_1_60_cmpr.jpg
+
+
+EXIF metadata
+APP markers
+
+
+https://imagemagick.org/magick/#gsc.tab=0
+
+magick input.jpg -quality 75 -define jpeg:preserve-settings=false -strip -set exif:DateTimeOriginal "%[exif:DateTimeOriginal]" output.jpg
+
+https://exiftool.org/
+
+
+
+exiftool -all= -tagsfromfile @ -time:all input.jpg
+jpegoptim --max=75 input.jpg
+
+
+exiftool -all= -tagsfromfile @ -time:all -ext jpg -ext jpeg .
+jpegoptim --max=75 *.jpg *.jpeg
+
+
+
+
+
+
+
