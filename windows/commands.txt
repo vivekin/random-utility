@@ -1,0 +1,2 @@
+search folders
+Get-ChildItem -Path E:\ -Recurse -Directory -Filter "*eBook Collection*" -ErrorAction SilentlyContinue
